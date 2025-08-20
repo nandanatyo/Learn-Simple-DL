@@ -49,7 +49,8 @@ Kolom-kolom:
 ## 📝 Cara Menjalankan
 
 1. Pastikan file `diabates.csv` ada di folder project.
-2. Jalankan `python diabetes.py`
+2. Jalankan `python diabetes.py` dan model akan disimpan dalam diabetes_model.h5
+3. Modifikasi data test predict.py jika ingin, lalu jalankan `python predict.py` 
 
 ---
 
@@ -58,7 +59,7 @@ Kolom-kolom:
 * **Loss** → ukuran error (semakin kecil semakin bagus).
 * **Accuracy** → persentase prediksi benar.
 
-Contoh output:
+Contoh output python diabetes.py:
 
 ```
 Epoch 150/150
@@ -67,6 +68,12 @@ Loss: 0.4800, Accuracy: 0.7708
 Probabilitas: [[0.84]] Prediksi: 1
 ```
 
+Contoh output python predict.py:
+
+```
+Probabilitas: [[0.14674056]]
+Prediksi: 0
+```
 ---
 
 ## 📖 Istilah Penting

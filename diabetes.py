@@ -28,3 +28,7 @@ print(f'Loss: {loss:.4f}, Akurasi: {accuracy:.4f}')
 # Prediksi
 prob = model.predict(X[0].reshape(1, -1))
 print("Probabilitas:", prob, "— Prediksi:", 1 if prob > 0.5 else 0)
+
+# Simpan model
+model.save("diabetes_model.h5")
+print("✅ Model berhasil disimpan sebagai diabetes_model.h5")
